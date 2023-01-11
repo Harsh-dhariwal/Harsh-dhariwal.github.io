@@ -4,9 +4,33 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 
+<style>
+   
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        
+        img{
+            height: 15rem;
+           
+        }
+        .head{
+            font-size: 9rem;
+        }
+        .v{
+          
+            font-size: 2rem;
+        }
+        
+        
+       
+    }
+
+    </style>
 
 
-   <title>OSDHACK</title>
 <div>
     <div class="nav">
        
@@ -32,13 +56,14 @@
     </div>
     
     <header>
-        <h1>OSDHACK 2023</h1>
+        <h1 class="head">OSDHACK'23</h1>
         <p>Coming soon !!</p>
        
     </header>
-    <span style="color: white;  font-family: courier, monospace; font-size: 0.8rem; font-weight: 300; position: fixed; top:78%; right:0; opacity: 100%;" id="visits">X</span>
-    <span style="color: white;  font-family: courier, monospace; font-size: 0.8rem; font-weight: 300; position: fixed; top:80%; right:0; opacity: 100%;" id="test">impressions and counting</span>
-   
+    <div style="position: fixed; bottom:15%; right:0; z-index: 999999; font-size: 1 rem;" class="v">
+    <span style="color: white;  font-family: courier, monospace;  font-weight: 300; opacity: 100%;" id="visits" class="t" >X</span>
+    <span style="color: white;  font-family: courier, monospace; font-weight: 300; opacity: 100%;" id="test" clas="t" >impressions and counting</span>
+</div>
 
 
 
@@ -50,11 +75,12 @@
 <script>
     // $("#test").text("jquery working");
     
-    $.getJSON("https://api.countapi.xyz/hit/harsh-dhariwal.github.io/", function(response) {
+    $.getJSON("https://api.countapi.xyz/hit/mysite.com/visits", function(response) {
     $("#visits").text(response.value);
 });
 
 
 </script>
 <script src="index.js"></script>
+<style>  </style>
 </html>
