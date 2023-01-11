@@ -11,6 +11,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
 header {
 position: fixed;
 top: 0; left: 0; right: 0; bottom: 0;
@@ -328,3 +329,9 @@ header h1 {
 margin-top: 0;
 }   
 }
+
+@media (max-width: 994px) {
+    header h1{
+        font-size: 9rem;
+    }
+  }
