@@ -1,0 +1,60 @@
+<html>
+   
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+
+
+
+<div>
+    <div class="nav">
+       
+        <div class="nav-header">
+            <img src="https://osdc.github.io/OSDHack/img/osdhack-sticker.png" alt="" height="80vw" width="auto">
+            <img src="https://osdc.github.io/OSDHack/img/jiit%20logo.png" alt="" height="80vw" width="auto">
+          
+        </div>
+         
+        
+        
+      </div>
+
+</div>
+    <div class="sky">
+        
+        <div class="skybars"></div>
+        <div class="sun"></div>
+        <div class="mountain-wrapper"></div>
+    </div>
+    <div class="ground">
+        <div id="vertical"></div>
+    </div>
+    
+    <header>
+        <h1>OSDHACK 2023</h1>
+        <p>Coming soon !!</p>
+       
+    </header>
+    <span style="color: white;  font-family: courier, monospace; font-size: 0.8rem; font-weight: 300; position: fixed; top:78%; right:0; opacity: 100%;" id="visits">X</span>
+    <span style="color: white;  font-family: courier, monospace; font-size: 0.8rem; font-weight: 300; position: fixed; top:80%; right:0; opacity: 100%;" id="test">impressions and counting</span>
+   
+
+
+
+
+
+
+
+
+<script>
+    // $("#test").text("jquery working");
+    
+    $.getJSON("https://api.countapi.xyz/hit/mysite.com/visits", function(response) {
+    $("#visits").text(response.value);
+});
+
+
+</script>
+<script src="index.js"></script>
+</html>
